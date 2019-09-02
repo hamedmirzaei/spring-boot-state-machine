@@ -1,0 +1,26 @@
+// start statemachine
+GET http://localhost:8085/start
+
+###
+// fire an event
+GET http://localhost:8085/event/start/E3
+
+###
+// fire an event
+GET http://localhost:8085/event/start/E4
+
+###
+// fire end event
+GET http://localhost:8085/event/start/end
+
+###
+// stop statemachine
+GET http://localhost:8085/stop
+
+###
+// get current state
+GET http://localhost:8085/states/current
+
+###
+// get all states
+GET http://localhost:8085/states
